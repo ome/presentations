@@ -1,0 +1,248 @@
+<!doctype html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title> - Madison 2015</title>
+
+    <meta name="description" content="OME and OMERO">
+    <meta name="author" content="the Open Microscopy Environment core team">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="reveal-js/css/reveal.min.css">
+    <link rel="stylesheet" href="reveal-js/css/theme/default.css" id="theme">
+
+    <!-- OME presentation overrides of the default theme -->
+    <style>
+      .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+        text-transform: none;
+      }
+      .reveal h2 {
+          font-size: 60px;
+      }
+      .reveal h3 {
+          font-size: 50px;
+      }
+      .ome_theme {
+          background-image: url("diagrams/ome-icon-opacity.png");
+          background-color: #f2f6f9;
+          background-repeat: no-repeat;
+          background-position: right -270px top -120px;
+      }
+      .reveal {
+          text-transform: none;   !important
+      }
+
+      .img_panel {
+          width: 150px;
+      }
+
+      .nobullet li {
+          list-style: none;
+      }
+
+      table.centre {
+          width: 100%;
+      }
+
+      .reveal .centre td {
+          text-align: center;
+      }
+
+      .rot90 {
+          -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+      }
+
+      .reveal .title {
+          position:absolute;
+          bottom:100%;
+          margin:5px;
+          color:red;
+      }
+
+      .larger {
+          font-size: 80px !important;
+      }
+
+      .reveal h1 {
+        font-size: 96px;
+      }
+
+      .reveal p,
+      .reveal pre {
+        margin-top: 2em;
+        margin-bottom: 2em;
+        line-height: 1.5;
+      }
+
+      .reveal pre {
+        background: #FFFFFF;
+        width: 100%;
+        margin-left: 0;
+      }
+
+      .reveal code {
+        font-size: 28px;
+      }
+
+      .reveal li {
+        margin-top: 0.25em;
+        margin-bottom: 0.25em;
+      }
+
+      .reveal section img {
+        background: rgba(0, 0, 0, 0);
+        box-shadow: none;
+        border: none;
+      }
+
+      .reveal q {
+        quotes: inherit;
+        font-style: normal;
+      }
+
+      .reveal aside {
+        font-size: 30px;
+        font-style: italic;
+      }
+    </style>
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="reveal-js/lib/css/zenburn.css">
+
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+      document.write( '<link rel="stylesheet" href="reveal-js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body class="ome_theme">
+
+    <div class="reveal">
+
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+
+        <!-- Title and overall introduction -->
+        <section>
+          <h1>OME and OMERO</h1>
+          <h2>ImageJ conference, Madison 2015</h2>
+          <p>Petr Walczysko</p>
+          <aside class="notes">
+          </aside>
+        </section>
+
+        <section>
+          <h2>Outline</h2>
+          <ul>
+            <li>History</li>
+            <li>Data workflow</li>
+            <li>What's OME</li>
+            <li>What's OMERO</li>
+            <li>OMERO and ImageJ</li>
+            <li>Questions</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Brief overview</a></h2>
+          <ul>
+            <li>Founded in 2000</li>
+            <li>Funded by Wellcome Trust, BBSRC, EPSRC, NIH</li>
+            <li>2014 Creation of a multi-development sites consortium</li>
+            <li>Open Source (mainly under GPL)</li>
+            <li>Commercial part: Glencoe Software created Nov 2005</li>
+          </ul>
+        </section>
+        <section>
+          <h2>The Standard paradigm</a></h2>
+          <img src="diagrams/standard-paradigm.png"/>
+        </section>
+        <section>
+         <h2>The <i>Scientific Data</i> paradigm</a></h2>
+          <img width="90%" height="90%" src="diagrams/scientific-paradigm.png"/>
+          <h2>
+          <aside>
+            Gray et al, 2005, Scientific Data Management in the Coming Decade, Microsoft Research
+          </aside>
+        </h2>
+        </section>
+        <section>
+          <h2>OME: What We Do</a></h2>
+          <img src="diagrams/OME.png"/>
+        </section>
+        <section>
+          <h2>OMERO: an <i>Extensible</i> platform</h2>
+          <img src="diagrams/OMERO-platform-extensible.png"/>  -->   
+        </section>
+        <section>
+          <h2>OMERO and ImageJ</h2>
+            <img src="diagrams/ImageJWorkflow.jpg"/>
+        </section>
+        <section>
+          <h2>OMERO and ImageJ,...: Next steps</h2>
+            <ul>
+              <li>Java gateway (available in v5.2)</li>
+              <li>Re-usable UI components</li>
+              <li>Continue <a href="https://github.com/imagej/imagej-omero">Server side integration</a> (Started by C. Rueden) </li> 
+            </ul>
+        </section>
+        <section>
+            <h2>Thank you</h2>
+            <ul>
+              <li>OME Consortium</li>
+            </ul>
+            <br/><br/>
+            <div style="background-color: #fff;">
+              <img src="diagrams/wellcome.jpg" height="90px"> 
+              <img src="diagrams/bbsrc.png" height="90px">
+            </div>
+        </section>
+        <section>
+          <h2>Questions?</h2>
+        </section>
+      </div> <!-- end class="slides" -->
+
+    </div> <!-- end class="reveal" -->
+
+    <script src="reveal-js/lib/js/head.min.js"></script>
+    <script src="reveal-js/js/reveal.min.js"></script>
+    <script>
+        // Full list of configuration options available here:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+
+            theme: 'sky', //Reveal.getQueryHash().theme, // available themes are in /css/theme
+            transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+            // Optional libraries used to extend on reveal.js
+            dependencies: [
+                // { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                // { src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                // { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                // { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                // { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                // { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+                // { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+                // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+            ]
+        });
+    </script>
+
+  </body>
+</html>
