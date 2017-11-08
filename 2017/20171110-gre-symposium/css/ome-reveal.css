@@ -19,10 +19,6 @@ body {
     url("../images/idr-icon-opacity-half.png") left -200px bottom -200px no-repeat;
 }
 
-X.fullscreen-image {
-    background-position: left 0px top 0px;
-}
-
 .fullscreen-image h2, .fullscreen-image h3 {
     background-color: rgba(242,246,249,0.8);
     text-align: right;
@@ -42,7 +38,6 @@ X.fullscreen-image {
 
 div.caption, div.caption a, a.caption {
   font-size: 0.6em;
-  xline-height: 0.5;
   text-align: center;
 }
 
@@ -60,35 +55,8 @@ img.right {
   border: 0;
 }
 
-Xhtml.dim .backgrounds {
-   filter: brightness(0.3);
-}
-
-X.reveal pre code {
-    white-space: pre-wrap;
-    font-size: 1.5em;
-    line-height: 1;
-}
-
-X.reveal pre.small code {
-    white-space: pre-wrap;
-    font-size: 1.2em;
-    line-height: 1;
-}
-
-X.reveal pre.tiny code {
-    white-space: pre-wrap;
-    font-size: 1em;
-    line-height: 1;
-}
-
 .reveal {
     text-transform: none;   !important
-}
-
-X.reveal section img {
-    border-width:0;
-    border-color: white;
 }
 
 .reveal .flexcontainer {
@@ -108,25 +76,8 @@ X.reveal section img {
     flex: 4;
 }
 
-X.img_panel {
-    width: 150px;
-}
-
 .nobullet li {
     list-style: none;
-}
-
-Xtable.centre {
-    width: 100%;
-}
-
-X.reveal .centre td {
-    text-align: center;
-}
-
-X.rot90 {
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
 }
 
 .reveal .title {
@@ -136,38 +87,12 @@ X.rot90 {
     color:red;
 }
 
-Xdiv.box {
-    border: 2px solid #2b2b2b;
-    margin: 10px;
-    padding: 10px;
-}
-
 .reveal ul {
-    list-style-image: url('../images/logos/idr-bullet.png');
+    list-style: url('../images/logos/idr-bullet.png');
 }
 
-X.reveal ul ul {
-    list-style: none;
-    margin-left: 0;
-    padding-left: 1em;
-}
-
-X.reveal ul ul > li:before {
-    display: inline-block;
-    content: "-";
-    width: 1em;
-    margin-left: -1em;
-}
-
-X.reference {
-    position: absolute;
-    left: 0px;
-    top: 680px;
-}
-
-X.reference a {
-    font-size: 12pt;
-    background-color: rgba(242,246,249,0.8);
+.reveal ul ul {
+    list-style: initial;
 }
 
 div.textoverlay, ul.textoverlay {
@@ -176,18 +101,20 @@ div.textoverlay, ul.textoverlay {
 }
 
 div.idrteam {
-    font-size: 16pt;
+    font-size: 14pt;
     padding: 10pt;
+    text-align: left;
 }
 
 div.idrteam div {
-    width: 11%;
+    width: 80px;
     display: inline-block;
     vertical-align: top;
+    text-align: center;
 }
 
 div.idrteam img {
-    height: 100px;
+    height: 80px;
     margin: 0;
 }
 

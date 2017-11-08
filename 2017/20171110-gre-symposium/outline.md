@@ -5,6 +5,7 @@ revealOptions:
   transition: fade
   center: false
   slideNumber: 'c/t'
+  showSlideNumber: speaker
 css:
   css/ome-reveal.css
 ---
@@ -33,7 +34,6 @@ Who thinks it's a good idea?
 <!-- .element class="fragment" -->
 http://www.nature.com/news/1-500-scientists-lift-the-lid-on-reproducibility-1.19970 <!-- .element class="caption" -->
 
-
 ---
 
 ## Why is the IDR needed?
@@ -59,10 +59,10 @@ Image databases have lagged behind though. There are several application-specifi
 ## What's the difficulty?
 
 ![cell](images/single-frame.jpg) <!-- .element height="50%" width="50%" -->
-<!-- https://celldivisionlab.files.wordpress.com/2015/06/single-frame.jpg
- -->
-
- TODO: Find an IDR image....
+<!--
+https://celldivisionlab.files.wordpress.com/2015/06/single-frame.jpg
+TODO: Find an IDR image.
+-->
 
 ----
 
@@ -86,14 +86,18 @@ VSAHPWVRANSRRVLPPSALQSVA
 
 ---
 
+## What's the difficulty?
+
 - Image data is extremely difficult to automatically annotate
-- Whereas genomics/proteomics data is often text-based, and annotations are mandatory
+  - There are 100s of different file formats
+- Genomics/proteomics data is often text-based
+  - annotations are mandatory for understanding
 
 ---
 
 ## What is the Image Data Resource?
 
-### [https://idr.openmicroscopy.org](https://idr.openmicroscopy.org)
+### https://idr.openmicroscopy.org
 
 ----
 
@@ -101,7 +105,7 @@ VSAHPWVRANSRRVLPPSALQSVA
 
 ----
 
-A repository for *reference datasets and images* that
+## A repository for reference datasets and images that
 
 > constitute valuable resources for a broader community of users that will often be accessed as a reference or that will be recomputed to extract additional information and knowledge
 
@@ -123,7 +127,7 @@ A repository for *reference datasets and images* that
 
 <!-- .slide: data-background-image="images/idr-datasets/idr-data-0.png" data-background-size="contain" data-background-position="top" class="fullscreen-image" -->
 
-## [https://idr.openmicroscopy.org](https://idr.openmicroscopy.org)
+## https://idr.openmicroscopy.org
 <!-- .element -->
 
 ----
@@ -212,8 +216,20 @@ A repository for *reference datasets and images* that
 
 ---
 
+## Genes and phenotypes in the IDR
+
+---
+
 <!-- .slide: data-background-color="black" -->
 <iframe src="https://idr.openmicroscopy.org/mapr/gene/?experimenter=-1" class="stretch"></iframe>
+
+----
+
+<!-- .slide: data-background-image="images/mapr/idr-mapr-genes-plk.png" data-background-size="contain" data-background-position="top" class="fullscreen-image" -->
+
+----
+
+<!-- .slide: data-background-image="images/mapr/idr-mapr-genes-plk1-1.png" data-background-size="contain" data-background-position="top" class="fullscreen-image" -->
 
 ---
 
@@ -274,13 +290,14 @@ UOD Life Science's own OMERO server
 
 <!-- .slide: data-background-image="images/schleicher2017/omero-schleicher2017-dataset-63452.png" data-background-size="contain" data-background-position="top" class="fullscreen-image" -->
 
-## [https://omero.lifesci.dundee.ac.uk/pub/schleicher-et-al-2017](https://omero.lifesci.dundee.ac.uk/pub/schleicher-et-al-2017)
+## https://omero.lifesci.dundee.ac.uk/pub/schleicher-et-al-2017
 <!-- .element class="fragment" -->
 
-## [https://dx.doi.org/10.17867/10000109](https://dx.doi.org/10.17867/10000109)
+## https://dx.doi.org/10.17867/10000109
 <!-- .element class="fragment" -->
 
-## TODO: Paper link
+![Schleicher 2017](images/schleicher2017/schleicher-2017-preprint.png)
+<!-- .element style="width:70%; float:right;" class="fragment" -->
 
 ![Katharina Schleicher](images/schleicher2017/photo-katharina_schleicher.png) <!-- .element style="width:20%; float:left;" -->
 
@@ -316,9 +333,11 @@ Tools for analysing image data in the IDR and OMERO
 
 ---
 
-## Virtual analysis environment
+## Analysis in the cloud
+### https://idr.openmicroscopy.org/jupyter/
 
-An online platform for running and sharing analysis scripts
+An online cloud-based analysis platform for running and sharing analysis scripts
+
 
 ![Python](images/logos/python-logo-master-v3-tm-flattened.png) <!-- .element height="100" -->
 ![R](images/logos/r-logo.png) <!-- .element height="100" -->
@@ -397,88 +416,138 @@ Contact us for more details: https://www.openmicroscopy.org/support/
 
 ---
 
-## The IDR team
+<div class="idrteam">
+  <div>
+    ![Jason Swedlow](images/team/jason_swedlow.jpg)
+    Jason Swedlow
+  </div>
+  <div>
+    ![Josh Moore](images/team/josh_moore.jpg)
+    Josh Moore
+  </div>
+  <div>
+    ![Simon Li](images/team/simon_li.png)
+    Simon Li
+  </div>
+  <div>
+    ![Eleanor Williams](images/team/eleanor_williams.png)
+    Eleanor Williams
+  </div>
+  <div>
+    ![Gabriella Rustici](images/team/gabriella_rustici.png)
+    Gabriella Rustici
+  </div>
+  <div>
+    ![Aleksandra Tarkowska](images/team/aleksandra_tarkowska.jpg)
+    Aleksandra Tarkowska
+  </div>
+  <div>
+    ![Richard Ferguson](images/team/richard_ferguson.png)
+    Richard Ferguson
+  </div>
+  <div>
+    ![Simone Leo](images/team/simone_leo.jpg)
+    Simone Leo
+  </div>
+  <div>
+    ![David Gault](images/team/david_gault.png)
+    David Gault
+  </div>
+  <div>
+    ![Dominik Lindner](images/team/dominik_lindner.png)
+    Dominik Lindner
+  </div>
+  <div>
+    ![Harald Waxenegger](images/team/harald_waxenegger.png)
+    Harald Waxenegger
+  </div>
+  <div>
+    ![Helen Flynn](images/team/helen_flynn.png)
+    Helen Flynn
+  </div>
+  <div>
+    ![Jean-Marie Burel](images/team/jeanmarie_burel.jpg)
+    Jean-Marie Burel
+  </div>
+  <div>
+    ![June Matthew](images/team/june_matthew.png)
+    June Matthew
+  </div>
+  <div>
+    ![Kenny Gillen](images/team/kenny_gillen.jpg)
+    Kenny Gillen
+  </div>
+  <div>
+    ![Mark Carroll](images/team/mark_carroll.jpg)
+    Mark Carroll
+  </div>
+  <div>
+    ![Petr Walczysko](images/team/petr_walczysko.png)
+    Petr Walczysko
+  </div>
+  <div>
+    ![Roger Leigh](images/team/roger_leigh.jpg)
+    Roger Leigh
+  </div>
+  <div>
+    ![Sebastien Besson](images/team/sebastien_besson.jpg)
+    Sebastien Besson
+  </div>
+  <div>
+    ![Will Moore](images/team/will_moore.png)
+    Will Moore
+  </div>
+  <div style="width:160px;">
+    ![OME](images/team/logo-ome.svg) <!-- .element class="plain whitelogo" style="height:50px;" -->
+    ![University of Dundee](images/team/logo-dundee.png) <!-- .element class="plain whitelogo" style="height:50px" -->
+  </div>
+</div>
 
-  <div class="idrteam">
-    <div>
-      ![Jason Swedlow](images/team/jason_swedlow.jpg)
-      Jason Swedlow
-    </div>
-    <div>
-      ![Josh Moore](images/team/josh_moore.jpg)
-      Josh Moore
-    </div>
-    <div>
-      ![Simon Li](images/team/simon_li.png)
-      Simon Li
-    </div>
-    <div>
-      ![Eleanor Williams](images/team/eleanor_williams.png)
-      Eleanor Williams
-    </div>
-    <div>
-      ![Gabriella Rustici](images/team/gabriella_rustici.png)
-      Gabriella Rustici
-    </div>
-    <div>
-      ![Aleksandra Tarkowska](images/team/aleksandra_tarkowska.jpg)
-      Aleksandra Tarkowska
-    </div>
-    <div>
-      ![Richard Ferguson](images/team/richard_ferguson.png)
-      Richard Ferguson
-    </div>
-    <div>
-      ![Simone Leo](images/team/simone_leo.jpg)
-      Simone Leo
-    </div>
-    <div style="width: auto;">
-      ![OME](images/team/logo-ome.png) <!-- .element class="plain whitelogo" style="height: 50px;" -->
-    </div>
+<div style="float: right;">
+  <div>
+    ![BBSRC](images/logos/bbsrc.png) <!-- .element class="plain whitelogo" style="height: 100px;" -->
   </div>
-  <div style="float: right;">
-    <div>
-      ![BBSRC](images/logos/bbsrc.png) <!-- .element class="plain whitelogo" style="height: 100px;" -->
-    </div>
-    <div>
-      ![Wellcome Trust](images/logos/wellcome.png) <!-- .element class="plain whitelogo" style="height: 100px;" -->
-    </div>
+  <div>
+    ![Wellcome Trust](images/logos/wellcome.png) <!-- .element class="plain whitelogo" style="height: 100px;" -->
   </div>
-  <div class="idrteam">
-    <div>
-      ![Alvis Brazma](images/team/alvis_brazma.png)
-      Alvis Brazma
-    </div>
-    <div>
-      ![Ugis Sarkans](images/team/ugis_sarkans.png)
-      Ugis Sarkans
-    </div>
-    <div>
-      ![Simon Jupp](images/team/simon_jupp.png)
-      Simon Jupp
-    </div>
-    <div>
-      ![Tony Burdett](images/team/tony_burdett.png)
-      Tony Burdett
-    </div>
-    <div style="width: auto;">
-      ![ebi](images/team/logo-ebi.png) <!-- .element class="plain whitelogo" style="height: 50px;" -->
-    </div>
+</div>
+
+<div class="idrteam">
+  <div>
+    ![Alvis Brazma](images/team/alvis_brazma.png)
+    Alvis Brazma
   </div>
-  <div class="idrteam">
-    <div>
-      ![Rafael Carazo-salas](images/team/rafael_carazosalas.png)
-      Rafael Carazo-salas
-    </div>
-    <div>
-      ![Bálint Antal](images/team/balint_antal.png)
-      Bálint Antal
-    </div>
-    <div>
-      ![Anatole Chessel](images/team/anatole_chessel.jpg)
-      Anatole Chessel
-    </div>
-    <div style="width: auto;">
-      ![University of Cambridge](images/team/logo-cambridge.png) <!-- .element class="plain whitelogo" style="height: 50px;" -->
-    </div>
+  <div>
+    ![Ugis Sarkans](images/team/ugis_sarkans.png)
+    Ugis Sarkans
   </div>
+  <div>
+    ![Simon Jupp](images/team/simon_jupp.png)
+    Simon Jupp
+  </div>
+  <div>
+    ![Tony Burdett](images/team/tony_burdett.png)
+    Tony Burdett
+  </div>
+  <div style="width: auto;">
+    ![ebi](images/team/logo-ebi.png) <!-- .element class="plain whitelogo" style="height: 50px;" -->
+  </div>
+</div>
+
+<div class="idrteam">
+  <div>
+    ![Rafael Carazo-salas](images/team/rafael_carazosalas.png)
+    Rafael Carazo-salas
+  </div>
+  <div style="width: auto;">
+    ![University of Bristol](images/team/logo-bristol.png) <!-- .element class="plain whitelogo" style="height: 50px;" -->
+  </div>
+  <div>
+    ![Bálint Antal](images/team/balint_antal.png)
+    Bálint Antal
+  </div>
+  <div>
+    ![Anatole Chessel](images/team/anatole_chessel.jpg)
+    Anatole Chessel
+  </div>
+</div>
