@@ -44,7 +44,7 @@ Bioinformatics databases are taken for granted in the life sciences
 ![ncbi](images/ncbi-homepage.png) <!-- .element class="flex1" -->
 </div>
 
----
+----
 
 ## What about imaging?
 Image databases have lagged behind though. There are several application-specific repositories:
@@ -71,7 +71,7 @@ TODO: Find an IDR image.
 ```text
 >sp|Q96GD4|AURKB_HUMAN Aurora kinase B OS=Homo sapiens GN=AURKB PE=1 SV=3
 ```
-<!-- .element: class="fragment" data-fragment-index="1" -->
+<!-- .element: class="fragment" -->
 ```text
 MAQKENSYPWPYGRQTAPSGLSTLPQRVLRKEPVTPSALV
 LMSRSNVQPTAAPGQKVMENSSGTPDILTRHFTIDDFEIG
@@ -107,7 +107,7 @@ VSAHPWVRANSRRVLPPSALQSVA
 
 ## A repository for reference datasets and images that
 
-> constitute valuable resources for a broader community of users that will often be accessed as a reference or that will be recomputed to extract additional information and knowledge
+> “constitute valuable resources for a <span class="emph">broader community of users</span> that will often be accessed as a reference or that will be <span class="emph">recomputed to extract additional information</span> and knowledge”
 
 [Euro-BioImaging - ELIXIR Image Data Strategy](http://www.eurobioimaging.eu/sites/default/files/Euro-BioImaging_Elixir_Image_Data_Strategy_0.pdf) <!-- .element class="caption" -->
 
@@ -141,7 +141,7 @@ VSAHPWVRANSRRVLPPSALQSVA
   [![idr0001-example](images/papers/mitocheck-paper.png)<!-- .element class="" width="65%" -->](http://dx.doi.org/10.1038/nature08869)
 </div>
 
----
+----
 
 <!-- .slide: data-background-image="images/idr-datasets/idr-0008a-well-11705.png" data-background-size="contain" data-background-position="top" class="fullscreen-image" -->
 ## Genetic HCS
@@ -216,9 +216,13 @@ VSAHPWVRANSRRVLPPSALQSVA
 
 ---
 
-## Genes and phenotypes in the IDR
+<!-- .slide: data-background-image="images/mapr/idr-image-2971124-mapanns.png" data-background-size="contain" data-background-position="top right" class="fullscreen-image" -->
 
----
+## Genes and phenotypes in the IDR <!-- .element style="float:left; width:50%; text-align:left;" -->
+
+![Image 2971124](images/mapr/idr-image-2971124.png) <!-- .element class="left" width="50%;" -->
+
+----
 
 <!-- .slide: data-background-color="black" -->
 <iframe src="https://idr.openmicroscopy.org/mapr/gene/?experimenter=-1" class="stretch"></iframe>
@@ -333,22 +337,19 @@ Tools for analysing image data in the IDR and OMERO
 
 ---
 
+<!-- .slide: data-background-image="images/jupyter/idr-jupyter-1.png" data-background-size="contain" data-background-position="top" class="fullscreen-image" -->
+
 ## Analysis in the cloud
+
 ### https://idr.openmicroscopy.org/jupyter/
+<!-- .element class="fragment" data-fragment-index="1" -->
 
-An online cloud-based analysis platform for running and sharing analysis scripts
+> An online cloud-based analysis platform for running and sharing analysis scripts
 
+<!-- .element class="fragment" data-fragment-index="1" -->
 
 ![Python](images/logos/python-logo-master-v3-tm-flattened.png) <!-- .element height="100" -->
 ![R](images/logos/r-logo.png) <!-- .element height="100" -->
-
-----
-
-<!-- .slide: data-background-image="images/jupyter/idr-jupyter-1.png" data-background-size="contain" data-background-position="top" class="fullscreen-image" -->
-
-----
-
-<!-- .slide: data-background-image="images/jupyter/idr-jupyter-2.png" data-background-size="contain" data-background-position="top" class="fullscreen-image" -->
 
 ----
 
@@ -360,33 +361,44 @@ An online cloud-based analysis platform for running and sharing analysis scripts
 
 ## Example: searching the IDR for novel gene interactors
 
-1. Start with a set of genes we're interested in <!-- .element class="fragment" -->
-2. Obtain a phenotypic profile characterising this set of genes <!-- .element class="fragment" -->
-3. Query the IDR across all studies to find other genes with a similar phenotypic profile <!-- .element class="fragment" -->
-4. We now have some new potential targets to research <!-- .element class="fragment" -->
-5. Initial validation with StringDB <!-- .element class="fragment" -->
+1. Start with a set of genes we're interested in
+2. Obtain a phenotypic profile characterising this set of genes
+3. Query the IDR for other genes with a similar phenotypic profile
+4. Hypothesis: these genes are potentially associated with the complex
 
 ----
 
-<!-- .slide: data-background-color="black" -->
-<iframe data-src="resources/ARP2-3Complex-Slide.html" class="stretch"></iframe>
+## 1. Start with a set of genes we're interested in
+- Arp2/3 protein complex
+![Jupyter ARP2-3 variables](images/jupyter/idr-arp23-variables.png)
 
 ----
 
-<!-- .slide: data-background-color="black" -->
-<iframe data-src="http://localhost:8888/" class="stretch"></iframe>
+## 2. Obtain a phenotypic profile characterising this set of genes
+- Search all studies in the IDR, obtain all phenotypes associated with these genes
+![Jupyter ARP2-3 query phenotypes](images/jupyter/idr-arp23-queryphenotypes.png)
 
 ----
 
-<!-- .slide: data-background-color="black" -->
-<iframe data-src="http://localhost:8888/notebooks/GRE/ARP2-3Complex-Slide.ipynb" class="stretch"></iframe>
-
+## 3. Query the IDR for other genes with a similar phenotypic profile
+- This gives us new targets to investigate
+<div style="overflow:scroll" class="stretch nospace">
+<div style="width:3472px" class="nospace">
+![Jupyter ARP2-3 similar genes](images/jupyter/idr-arp23-similargenes.png) <!-- .element class="nospace left" -->
+</div>
+</div>
 
 ----
 
-## Caveats
+## 4. Hypothesis: these genes are potentially associated with the complex
+- Initial validation with StringDB
+![Jupyter ARP2-3 interactors code](images/jupyter/idr-arp23-interactorscode.png)
 
-This is very preliminary work!
+----
+
+<!-- .slide: data-background-image="images/jupyter/idr-arp23-primaryinteractors.png" data-background-size="contain" data-background-position="top" class="fullscreen-image" -->
+
+## Remember: this is very<br>preliminary work! <!-- .element class="fragment" -->
 
 ---
 
@@ -400,7 +412,7 @@ This is very preliminary work!
   </div>
   <div class="flex1 caption">
 ![nightshade](images/summary/nightshade-web-1.png) <!-- .element class="nospace" -->
-    https://nightshade.openmicroscopy.org
+    <span style="letter-spacing:-0.5px">https://nightshade.openmicroscopy.org</span>
   </div>
   <div class="flex1 caption">
 ![figure](images/summary/nightshade-figure-example.png) <!-- .element class="nospace" -->
@@ -408,7 +420,7 @@ This is very preliminary work!
   </div>
   <div class="flex1 caption">
 ![analysis](images/summary/idr-jupyter-example.png) <!-- .element class="nospace" -->
-    Virtual analysis
+    IDR cloud analysis
   </div>
 </div>
 
@@ -436,18 +448,6 @@ Contact us for more details: https://www.openmicroscopy.org/support/
   <div>
     ![Gabriella Rustici](images/team/gabriella_rustici.png)
     Gabriella Rustici
-  </div>
-  <div>
-    ![Aleksandra Tarkowska](images/team/aleksandra_tarkowska.jpg)
-    Aleksandra Tarkowska
-  </div>
-  <div>
-    ![Richard Ferguson](images/team/richard_ferguson.png)
-    Richard Ferguson
-  </div>
-  <div>
-    ![Simone Leo](images/team/simone_leo.jpg)
-    Simone Leo
   </div>
   <div>
     ![David Gault](images/team/david_gault.png)
@@ -498,8 +498,15 @@ Contact us for more details: https://www.openmicroscopy.org/support/
     Will Moore
   </div>
   <div style="width:160px;">
-    ![OME](images/team/logo-ome.svg) <!-- .element class="plain whitelogo" style="height:50px;" -->
-    ![University of Dundee](images/team/logo-dundee.png) <!-- .element class="plain whitelogo" style="height:50px" -->
+    ![OME](images/team/logo-ome.svg) <!-- .element class="plain whitelogo" style="height:45px;" -->
+    ![University of Dundee](images/team/logo-dundee.png) <!-- .element class="plain whitelogo" style="height:45px" -->
+  </div>
+  <div>
+    ![Rafael Carazo-salas](images/team/rafael_carazosalas.png)
+    Rafael Carazo-salas
+  </div>
+  <div style="width: auto;">
+    ![University of Bristol](images/team/logo-bristol.png) <!-- .element class="plain whitelogo" style="height: 50px;" -->
   </div>
 </div>
 
@@ -536,11 +543,16 @@ Contact us for more details: https://www.openmicroscopy.org/support/
 
 <div class="idrteam">
   <div>
-    ![Rafael Carazo-salas](images/team/rafael_carazosalas.png)
-    Rafael Carazo-salas
+    ![Aleksandra Tarkowska](images/team/aleksandra_tarkowska.jpg)
+    Aleksandra Tarkowska
   </div>
-  <div style="width: auto;">
-    ![University of Bristol](images/team/logo-bristol.png) <!-- .element class="plain whitelogo" style="height: 50px;" -->
+  <div>
+    ![Richard Ferguson](images/team/richard_ferguson.png)
+    Richard Ferguson
+  </div>
+  <div>
+    ![Simone Leo](images/team/simone_leo.jpg)
+    Simone Leo
   </div>
   <div>
     ![Bálint Antal](images/team/balint_antal.png)
