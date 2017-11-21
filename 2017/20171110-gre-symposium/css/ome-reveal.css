@@ -1,0 +1,133 @@
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+  text-transform: none;
+  color: #2b2b2b;
+}
+.reveal h1 {
+    font-size: 2em;
+}
+.reveal h2 {
+    font-size: 1.3em;
+}
+.reveal h3 {
+    font-size: 1em;
+}
+
+body {
+  background-color: #f2f6f9;
+  background:
+    url("../images/ome-icon-opacity.png") right -270px top -270px no-repeat,
+    url("../images/idr-icon-opacity-half.png") left -200px bottom -200px no-repeat;
+}
+
+.fullscreen-image h2, .fullscreen-image h3 {
+    background-color: rgba(242,246,249,0.8);
+    text-align: right;
+    max-width: fit-content;
+    max-width: -moz-fit-content;
+    max-width: -webkit-fit-content;
+    margin-left: auto;
+    margin-right: 0px;
+    padding: 10pt;
+    transition: all .15s linear;
+    vertical-align: top;
+}
+
+.fullscreen-image h2:hover, .fullscreen-image h3:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
+}
+
+div.caption, div.caption a, a.caption {
+  font-size: 0.6em;
+  text-align: center;
+}
+
+img.left {
+  float: left;
+}
+
+img.right {
+  float: right;
+}
+
+.reveal .nospace {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.reveal {
+    text-transform: none;   !important
+}
+
+.reveal .flexcontainer {
+    display: flex;
+}
+
+.reveal .flex1 {
+    flex: 1;
+}
+.reveal .flex2 {
+    flex: 2;
+}
+.reveal .flex3 {
+    flex: 3;
+}
+.reveal .flex4 {
+    flex: 4;
+}
+
+.nobullet li {
+    list-style: none;
+}
+
+.reveal .title {
+    position:absolute;
+    bottom:100%;
+    margin:5px;
+    color:red;
+}
+
+.reveal ul {
+    list-style: url('../images/logos/idr-bullet.png');
+}
+
+.reveal ul ul {
+    list-style: initial;
+}
+
+div.textoverlay, ul.textoverlay {
+    background-color: rgba(242,246,249,0.8);
+    padding: 10px;
+}
+
+div.idrteam {
+    font-size: 14pt;
+    padding: 10pt;
+    text-align: left;
+}
+
+div.idrteam div {
+    width: 80px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+div.idrteam img {
+    height: 80px;
+    margin: 0;
+}
+
+.reveal blockquote {
+    background-color: rgba(242,246,249,0.8);
+}
+
+blockquote .emph {
+    color: darkred;
+    font-weight:bold;
+    font-style: normal;
+}
+
+.reveal img.whitelogo {
+    background-color: white;
+}
