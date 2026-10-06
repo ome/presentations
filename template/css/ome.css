@@ -45,38 +45,35 @@ table.centre {
 }
 
 .fair-container {
-    position: relative;
-    width: 68%; 
-    margin: 0 auto 20px auto;
+    text-align: center;
+}
+
+.fair-container h2 {
+    margin: 0 0 0.15em 0;
 }
 
 .fair-image {
     display: block;
-    width: 100%;
+    width: 95%;
+    max-height: 78vh;
+    object-fit: contain;
     margin: 0 auto;
 }
 
-.reveal .fair-credit {
+section .fair-container .fair-credit {
     position: absolute;
     bottom: 8px;
-
-    left: 12%;
-    right: 12%;
-
+    right: 16px;
+    font-size: 9px !important;
+    line-height: 1.2;
+    opacity: 0.5;
     text-align: right;
-    font-size: 28%;
-    font-style: italic;
-    color: #555;
+    max-width: 45%;
 }
 
-.reveal .fair-links {
-    display: inline-block;
-    text-align: left;
-    margin-top: 0.7em;
-}
-
-.reveal .fair-links li {
-    font-size: 0.9em;
+.fair-links {
+    font-size: 0.5em;
+    margin-top: 0.2em;
 }
 
 .reveal .centre td {
