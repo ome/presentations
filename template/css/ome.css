@@ -44,6 +44,38 @@ table.centre {
     width: 100%;
 }
 
+.fair-container {
+    text-align: center;
+}
+
+.fair-container h2 {
+    margin: 0 0 0.15em 0;
+}
+
+.fair-image {
+    display: block;
+    width: 95%;
+    max-height: 78vh;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+section .fair-container .fair-credit {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    font-size: 9px !important;
+    line-height: 1.2;
+    opacity: 0.5;
+    text-align: right;
+    max-width: 45%;
+}
+
+.fair-links {
+    font-size: 0.5em;
+    margin-top: 0.2em;
+}
+
 .reveal .centre td {
     text-align: center;
 }
